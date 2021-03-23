@@ -1,0 +1,30 @@
+{
+    "name": "@infinityworks/pokemon-app",
+    "version": "0.0.8",
+    "description": "Simple pokemon app for demos and use in github",
+    "author": "InfinityWorks",
+    "license": "MIT",
+    "main": "populatePokedex.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node server.js &",
+        "dev": "nodemon server.js"
+    },
+    "publishConfig": {
+        "cache": "~/.npm",
+        "registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/infinityworks/academy-repo-example-nj.git"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "node-fetch": "^2.6.1",
+        "nunjucks": "^3.2.2"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.7"
+    }
+}

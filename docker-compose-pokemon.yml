@@ -1,0 +1,13 @@
+# This file is a pre-cooked sample for the Docker session
+---
+version: "3"
+
+services:
+  pokemon-app:
+    image: my-pokemon-app:latest
+    container_name: my-pokemon-app
+    build:
+      context: ./pokemon-app
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
